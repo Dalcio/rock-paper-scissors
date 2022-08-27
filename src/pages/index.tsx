@@ -1,11 +1,14 @@
+import { Stack } from '@mantine/core';
 import { Footer, Hand, Header } from 'components';
 
 export default function HomePage() {
   return (
-    <>
-      <Header />
-      <Hand />
+    <Stack p="xl">
+      <Stack p="xl">
+        <Header />
+        <Hand />
+      </Stack>
       <Footer />
-    </>
+    </Stack>
   );
 }

@@ -19,7 +19,13 @@
       "components": ["src/components"],
       "components/*": ["src/components/*"],
       "store": ["src/store"],
-      "store/*": ["src/store/*"]
+      "store/*": ["src/store/*"],
+      "assets": ["src/assets"],
+      "assets/*": ["src/assets/*"],
+      "theme": ["src/theme"],
+      "theme/*": ["src/theme/*"],
+      "constants": ["src/constants"],
+      "constants/*": ["src/constants/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

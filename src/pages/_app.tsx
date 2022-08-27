@@ -1,20 +1,33 @@
+import Head from 'next/head';
+import CustomFonts from 'theme/custom-fonts';
+import theme from 'theme';
+
 import { GetServerSidePropsContext } from 'next';
 import { useState } from 'react';
 import { AppProps } from 'next/app';
 import { getCookie, setCookies } from 'cookies-next';
-import Head from 'next/head';
 import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
 import { NotificationsProvider } from '@mantine/notifications';
+import { APP_NAME } from 'constants/application';
+import GlobalStyles from 'theme/global-styles';
 
-export default function App(props: AppProps & { colorScheme: ColorScheme }) {
-  const { Component, pageProps } = props;
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(props.colorScheme);
+const useColorScheme = (init: ColorScheme) => {
+  const [colorScheme, setColorScheme] = useState<ColorScheme>(init);
 
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark');
     setColorScheme(nextColorScheme);
-    setCookies('mantine-color-scheme', nextColorScheme, { maxAge: 60 * 60 * 24 * 30 });
+    setCookies(APP_NAME, nextColorScheme, { maxAge: 60 * 60 * 24 * 30 });
   };
+
+  return {
+    colorScheme,
+    toggleColorScheme,
+  };
+};
+export default function App(props: AppProps & { colorScheme: ColorScheme }) {
+  const { Component, pageProps } = props;
+  const { colorScheme, toggleColorScheme } = useColorScheme(props.colorScheme);
 
   return (
     <>
@@ -23,9 +36,11 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon-32x32.png" />
       </Head>
-
+      <></>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+        <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme, colorScheme }}>
+          <CustomFonts />
+          <GlobalStyles />
           <NotificationsProvider>
             <Component {...pageProps} />
           </NotificationsProvider>
@@ -36,5 +51,5 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
 }
 
 App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-  colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
+  colorScheme: getCookie(APP_NAME, ctx) || 'dark',
 });

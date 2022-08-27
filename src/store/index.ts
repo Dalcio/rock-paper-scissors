@@ -1,20 +1,25 @@
-import { persist, devtools } from 'zustand/middleware';
-import createStore, { StateCreator } from 'zustand';
+import { combine, devtools, persist } from 'zustand/middleware';
 
-type TStoreState = {
-  score: number;
-  turn: 'human' | 'computer' | 'human-one';
+import create from 'zustand';
+
+import { TStoreState, TStoreActions, TStore } from './store.types';
+
+import storeActions from './store.actions';
+
+const storeState: TStoreState = {
+  score: 0,
+  turn: 'human',
+  playerHost: 'human',
+  multiplayer: undefined,
 };
 
-type TStoreActions = {
-  changeTurn: () => void;
-};
-
-type TStore = StateCreator<TStoreState, [], [], TStoreActions>;
-
-let store = createStore<TStore>();
+let store = combine<TStoreState, TStoreActions, any, any>(storeState, storeActions);
 
 store = persist(store);
-store = devtools(store);
+store = devtools(store, {
+  name: 'rock-paper-scissors',
+});
 
-export const useStore = () => createStore<TStore>(store);
+const useStore = create<TStore>(store);
+
+export default useStore;

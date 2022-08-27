@@ -1,10 +1,8 @@
-import { combine, devtools, persist } from 'zustand/middleware';
-
 import create from 'zustand';
-
-import { TStoreState, TStoreActions, TStore } from './store.types';
-
+import { combine, devtools, persist } from 'zustand/middleware';
+import { APP_NAME } from 'constants/application';
 import storeActions from './store.actions';
+import { TStoreState, TStoreActions, TStore } from './store.types';
 
 const storeState: TStoreState = {
   score: 0,
@@ -17,7 +15,7 @@ let store = combine<TStoreState, TStoreActions, any, any>(storeState, storeActio
 
 store = persist(store);
 store = devtools(store, {
-  name: 'rock-paper-scissors',
+  name: APP_NAME,
 });
 
 const useStore = create<TStore>(store);

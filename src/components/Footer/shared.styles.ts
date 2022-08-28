@@ -1,6 +1,6 @@
 import { createStyles } from '@mantine/core';
 
-const useRuleStyles = createStyles(({ white, colors, fn, spacing }) => ({
+const useSharedFooterStyles = createStyles(({ white, colors, fn, spacing }) => ({
   inner: {
     [fn.smallerThan('xs')]: {
       padding: 0,
@@ -32,6 +32,7 @@ const useRuleStyles = createStyles(({ white, colors, fn, spacing }) => ({
   title: {
     color: colors.neutral[0],
     fontSize: '1.5rem',
+    textTransform: 'uppercase',
     [fn.smallerThan('xs')]: {
       textAlign: 'center',
       width: '100%',
@@ -43,6 +44,9 @@ const useRuleStyles = createStyles(({ white, colors, fn, spacing }) => ({
       width: '90%',
     },
   },
+  label: {
+    textTransform: 'uppercase',
+  },
 }));
 
-export default useRuleStyles;
+export default useSharedFooterStyles;

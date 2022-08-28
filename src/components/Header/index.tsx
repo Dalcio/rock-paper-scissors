@@ -2,16 +2,6 @@ import useStore from 'store';
 
 import { Stack, Text, Title } from '@mantine/core';
 
-const HeaderTitle = (
-  <Stack className="line-height-0" spacing={0}>
-    <span>ROCK</span>
-    <span>PAPER</span>
-    <span>SCISSORS</span>
-    <span>LIZARD</span>
-    <span>SPOCK</span>
-  </Stack>
-);
-
 const Header = () => {
   const score = useStore((s) => s.score);
 
@@ -29,7 +19,8 @@ const Header = () => {
         maxWidth: breakpoints.xs,
       })}
     >
-      {HeaderTitle}
+      {/* eslint-disable-next-line @next/next/no-img-element*/}
+      <img src="/images/logo-bonus.svg" alt="" />
       <Stack
         align="center"
         sx={({ radius, spacing, white }) => ({

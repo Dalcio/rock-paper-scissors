@@ -1,5 +1,5 @@
 import { Stack } from '@mantine/core';
-import Invite from './Invite';
+// import Invite from './Invite';
 import Rules from './Rules';
 
 const Footer = () => (
@@ -11,7 +11,7 @@ const Footer = () => (
       },
     })}
   >
-    <Invite />
+    {/* <Invite /> */}
     <Rules />
   </Stack>
 );

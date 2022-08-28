@@ -18,6 +18,14 @@ const GlobalStyles = () => (
             ? theme.fn.radialGradient(theme.colors.bg[0], theme.colors.bg[1])
             : theme.white,
       },
+      '@keyframes fade': {
+        from: {
+          opacity: 0.3,
+        },
+        to: {
+          opacity: 0,
+        },
+      },
     })}
   />
 );

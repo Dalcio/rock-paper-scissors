@@ -6,14 +6,17 @@ import { TStoreState, TStoreActions, TStore } from './store.types';
 
 const storeState: TStoreState = {
   score: 0,
-  turn: 'human',
-  playerHost: 'human',
-  multiplayer: undefined,
+  step: 0,
+  winner: undefined,
+  humanValue: undefined,
+  computerValue: undefined,
 };
 
 let store = combine<TStoreState, TStoreActions, any, any>(storeState, storeActions);
 
-store = persist(store);
+store = persist(store, {
+  name: APP_NAME,
+});
 store = devtools(store, {
   name: APP_NAME,
 });

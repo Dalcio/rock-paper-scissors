@@ -1,10 +1,16 @@
-import { Box } from '@mantine/core';
+import { Stack } from '@mantine/core';
 import useStore from 'store';
+import ComputerTurn from './ComputerTurn';
+import HumanTime from './HumanTime';
 
 const Hand = () => {
-  const s = useStore((s) => s.setScore);
+  const step = useStore((s) => s.step);
 
-  return <Box style={{ flexGrow: 1 }}>Hand</Box>;
+  return (
+    <Stack align="center" justify="center" style={{ flexGrow: 1, width: '100%' }}>
+      {(step === 0 && <HumanTime />) || <ComputerTurn />}
+    </Stack>
+  );
 };
 
 export default Hand;

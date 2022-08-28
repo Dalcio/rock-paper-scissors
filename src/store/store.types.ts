@@ -1,17 +1,21 @@
-type TCurrentPlayer = 'human' | 'computer' | 'guest';
+type TCurrentPlayer = 'human' | 'computer'; //| 'guest';
+
+export type TGameValues = 'rock' | 'paper' | 'scissors' | 'lizard' | 'spock';
 
 export type TStoreState = {
   score: number;
-  playerHost: TCurrentPlayer;
-  turn: TCurrentPlayer;
-  multiplayer?: string | undefined;
+  step: number;
+  humanValue: TGameValues | undefined;
+  computerValue: TGameValues | undefined;
+  winner: TCurrentPlayer | 'draw' | undefined;
 };
 
 export type TStoreActions = {
-  handleTurn: () => void;
-  setPlayerHost: (playerHost: TCurrentPlayer) => void;
+  nextStep: (step?: number) => void;
+  playAgain: () => void;
+  onComputerPlay: () => void;
+  onHumanPlay: (value: TGameValues) => void;
   setScore: (score: number) => void;
-  setMultiplayer: (multiplayer: string) => void;
 };
 
 export type TStore = TStoreState & TStoreActions;

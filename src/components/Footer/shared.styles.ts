@@ -44,8 +44,15 @@ const useSharedFooterStyles = createStyles(({ white, colors, fn, spacing }) => (
       width: '90%',
     },
   },
-  label: {
+  button: {
     textTransform: 'uppercase',
+    borderColor: colors.neutral[2],
+    color: colors.neutral[2],
+  },
+  filledButton: {
+    textTransform: 'uppercase',
+    backgroundColor: white,
+    color: colors.neutral[0],
   },
 }));
 

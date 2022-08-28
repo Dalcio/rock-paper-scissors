@@ -18,7 +18,7 @@ export const FooterButton = ({ title, btnVariant = 'outline', children }: TFoote
   return (
     <>
       <Button
-        className={classes.label}
+        className={(btnVariant === 'filled' && classes.filledButton) || classes.button}
         size="lg"
         variant={btnVariant}
         onClick={openModal}

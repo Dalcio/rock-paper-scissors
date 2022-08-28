@@ -11,6 +11,8 @@ const GlobalStyles = () => (
       },
       body: {
         ...theme.fn.fontStyles(),
+        display: 'grid',
+        gridTemplateRows: '1fr auto',
         background:
           theme.colorScheme === 'dark'
             ? theme.fn.radialGradient(theme.colors.bg[0], theme.colors.bg[1])

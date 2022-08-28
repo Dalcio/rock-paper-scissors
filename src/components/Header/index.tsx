@@ -17,14 +17,16 @@ const Header = () => {
 
   return (
     <Stack
-      p="md"
+      p="xs"
       align="center"
-      sx={({ colors, radius }) => ({
+      sx={({ colors, radius, breakpoints }) => ({
         flexDirection: 'row',
         justifyContent: 'space-between',
         border: '4px solid #fff',
         borderRadius: radius.md,
         borderColor: colors.neutral[2],
+        width: '100%',
+        maxWidth: breakpoints.xs,
       })}
     >
       {HeaderTitle}
@@ -33,9 +35,9 @@ const Header = () => {
         sx={({ radius, spacing, white }) => ({
           backgroundColor: white,
           borderRadius: radius.md,
-          padding: `${spacing.md}px ${spacing.lg + spacing.md}px`,
+          padding: `${spacing.md}px ${spacing.lg + spacing.sm}px`,
         })}
-        spacing="sm"
+        spacing={0}
       >
         <Text sx={(t) => ({ color: t.colors.neutral[0] })} weight="bold">
           SCORE

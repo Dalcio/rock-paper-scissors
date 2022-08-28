@@ -1,39 +1,65 @@
-# Mantine Next Template
+# Rock, Paper, Scissors, Lixard and Spock
 
-Get started with Mantine + Next with just a few button clicks.
-Click `Use this template` button at the header of repository or [follow this link](https://github.com/mantinedev/mantine-next-template/generate) and
-create new repository with `@mantine` packages. Note that you have to be logged in to GitHub to generate template.
+![Desktop Preview](./screenshots/desktop-home-preview.png)
 
-## Features
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-This template comes with several essential features:
+## Table of contents
 
-- Server side rendering setup for Mantine
-- Color scheme is stored in cookie to avoid color scheme mismatch after hydration
-- Storybook with color scheme toggle
-- Jest with react testing library
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-## npm scripts
+## Overview
 
-### Build and dev scripts
+### The challenge
 
-- `dev` – start dev server
-- `build` – bundle application for production
-- `export` – exports static website to `out` folder
-- `analyze` – analyzes application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+User are able to:
 
-### Testing scripts
+- View the optimal layout for the game depending on their device's screen size
+- Maintain the state of the score after refreshing the browser
+- Play Rock, Paper, Scissors, Lizard, Spock against the computer
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `jest` – runs jest tests
-- `jest:watch` – starts jest watch
-- `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
+### Screenshot
 
-### Other scripts
+![Desktop Rules](./screenshots/desktop-rules.png)
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+![Desktop Rules](./screenshots/draw-preview.png)
+
+![Desktop Rules](./screenshots/lose-preview.png)
+
+![Desktop Rules](./screenshots/mobile-home-preview.png)
+
+![Desktop Rules](./screenshots/rules-mobile-preview.png)
+
+![Desktop Rules](./screenshots/win-mobile.preview.png)
+
+### Links
+
+- Solution URL: [rock-paper-scissors](https://github.com/Dalcio/rock-paper-scissors)
+- Live Site URL: [Rock Paper Scissors](rock-paper-scissors-flax-eight.vercel.app)
+
+## My process
+
+### Built with
+
+- Typescript - JS superset
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Mantine UI](https://mantine.dev) - For styles
+
+### Continued development
+
+I pretend to implement Multiplayer,.
+
+## Author
+
+- Website - [Dálcio Garcia](https://dalciogarcia.vercel.app)
+- Linkedin - [dalcio](https://linkedin.com/in/dalcio)
+- Github - [@dalcio](https://github.com/dalcio)

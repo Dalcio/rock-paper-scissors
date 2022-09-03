@@ -28,22 +28,19 @@ User are able to:
 
 ### Screenshot
 
-![Desktop Rules](./screenshots/desktop-rules.png)
+| Desktop View   | Mobile view  |
+|---|---|
+|![Desktop Rules](./screenshots/draw-preview.png)|![Desktop Rules](./screenshots/lose-preview.png)|
+|![Desktop Rules](./screenshots/desktop-rules.png)|![Desktop Rules](./screenshots/rules-mobile-preview.png)|
 
-![Desktop Rules](./screenshots/draw-preview.png)
-
-![Desktop Rules](./screenshots/lose-preview.png)
-
-![Desktop Rules](./screenshots/mobile-home-preview.png)
-
-![Desktop Rules](./screenshots/rules-mobile-preview.png)
-
-![Desktop Rules](./screenshots/win-mobile.preview.png)
+|    | |
+|---|---|
+|![Desktop Rules](./screenshots/mobile-home-preview.png)|![Desktop Rules](./screenshots/win-mobile.preview.png)|
 
 ### Links
 
 - Solution URL: [rock-paper-scissors](https://github.com/Dalcio/rock-paper-scissors)
-- Live Site URL: [Rock Paper Scissors](rock-paper-scissors-flax-eight.vercel.app)
+- Live Site URL: [Rock Paper Scissors](https://rock-paper-scissors-flax-eight.vercel.app)
 
 ## My process
 

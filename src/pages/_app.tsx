@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { AppProps } from 'next/app';
 import { getCookie, setCookies } from 'cookies-next';
 import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
-import { NotificationsProvider } from '@mantine/notifications';
 import { APP_NAME } from 'constants/application';
 import GlobalStyles from 'theme/global-styles';
 
@@ -41,9 +40,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <MantineProvider withGlobalStyles withNormalizeCSS theme={{ ...theme, colorScheme }}>
           <CustomFonts />
           <GlobalStyles />
-          <NotificationsProvider>
-            <Component {...pageProps} />
-          </NotificationsProvider>
+          <Component {...pageProps} />
         </MantineProvider>
       </ColorSchemeProvider>
     </>

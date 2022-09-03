@@ -43,7 +43,7 @@ User are able to:
 ### Links
 
 - Solution URL: [rock-paper-scissors](https://github.com/Dalcio/rock-paper-scissors)
-- Live Site URL: [Rock Paper Scissors](rock-paper-scissors-flax-eight.vercel.app)
+- Live Site URL: [Rock Paper Scissors](https://rock-paper-scissors-flax-eight.vercel.app)
 
 ## My process
 

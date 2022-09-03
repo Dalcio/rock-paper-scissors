@@ -28,17 +28,14 @@ User are able to:
 
 ### Screenshot
 
-![Desktop Rules](./screenshots/desktop-rules.png)
+| Desktop View   | Mobile view  |
+|---|---|
+|![Desktop Rules](./screenshots/draw-preview.png)|![Desktop Rules](./screenshots/lose-preview.png)|
+|![Desktop Rules](./screenshots/desktop-rules.png)|![Desktop Rules](./screenshots/rules-mobile-preview.png)|
 
-![Desktop Rules](./screenshots/draw-preview.png)
-
-![Desktop Rules](./screenshots/lose-preview.png)
-
-![Desktop Rules](./screenshots/mobile-home-preview.png)
-
-![Desktop Rules](./screenshots/rules-mobile-preview.png)
-
-![Desktop Rules](./screenshots/win-mobile.preview.png)
+|    | |
+|---|---|
+|![Desktop Rules](./screenshots/mobile-home-preview.png)|![Desktop Rules](./screenshots/win-mobile.preview.png)|
 
 ### Links
 

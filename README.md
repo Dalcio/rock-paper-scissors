@@ -28,14 +28,14 @@ User are able to:
 
 ### Screenshot
 
-| Desktop View   | Mobile view  |
-|---|---|
-|![Desktop Rules](./screenshots/draw-preview.png)|![Desktop Rules](./screenshots/lose-preview.png)|
-|![Desktop Rules](./screenshots/desktop-rules.png)|![Desktop Rules](./screenshots/rules-mobile-preview.png)|
+| Desktop View                                      | Mobile view                                              |
+| ------------------------------------------------- | -------------------------------------------------------- |
+| ![Desktop Rules](./screenshots/draw-preview.png)  | ![Desktop Rules](./screenshots/lose-preview.png)         |
+| ![Desktop Rules](./screenshots/desktop-rules.png) | ![Desktop Rules](./screenshots/rules-mobile-preview.png) |
 
-|    | |
-|---|---|
-|![Desktop Rules](./screenshots/mobile-home-preview.png)|![Desktop Rules](./screenshots/win-mobile.preview.png)|
+|                                                         |                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------ |
+| ![Desktop Rules](./screenshots/mobile-home-preview.png) | ![Desktop Rules](./screenshots/win-mobile.preview.png) |
 
 ### Links
 
@@ -58,5 +58,5 @@ I pretend to implement Multiplayer,.
 ## Author
 
 - Website - [Dálcio Garcia](https://dalciogarcia.vercel.app)
-- Linkedin - [dalcio](https://linkedin.com/in/dalcio)
+- Linkedin - [dalcio-garcia](https://linkedin.com/in/dalcio-garcia)
 - Github - [@dalcio](https://github.com/dalcio)
